@@ -1,0 +1,19 @@
+services:
+  db:
+    image: happypond/popotesquiz-bdd:latest
+    container_name: popotesquiz-bdd
+    environment:
+      POSTGRES_USER: ${BDD_UTILISATEUR}
+      POSTGRES_PASSWORD: ${BDD_MDP}
+      POSTGRES_DB: popotesquiz
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_MDP}
+    ports:
+      - "5050:80"
