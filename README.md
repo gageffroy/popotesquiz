@@ -15,7 +15,6 @@ Le Popotes Quiz fontionne avec 4 conteneurs:
 Les conteneurs sont tous basés sur des images accessibles publiquement sur DockerHub. Le docker_compose se suffit à lui-même pour démarrer le quiz. Il suffit d'ajouter un fichier .env avec des identifiants et des mots de passe. Voici un template de .env:
 ```
 # Identifiants base de données
-BDD_UTILISATEUR=popotesquiz
 BDD_MDP=popotesquiz
 
 # Identifiant pgAdmin
