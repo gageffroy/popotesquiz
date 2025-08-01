@@ -3,9 +3,11 @@ services:
     image: happypond/popotesquiz-bdd:latest
     container_name: popotesquiz-bdd
     environment:
-      POSTGRES_USER: ${BDD_UTILISATEUR}
-      POSTGRES_PASSWORD: ${BDD_MDP}
-      POSTGRES_DB: popotesquiz
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      BDD_UTILISATEUR: ${BDD_UTILISATEUR}
+      BDD_UTILISATEUR_MDP: ${BDD_UTILISATEUR_MDP}
     ports:
       - "5432:5432"
 
