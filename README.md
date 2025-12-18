@@ -32,4 +32,4 @@ En cas de besoin, pgAdmin est accessible sur le port 5050. Pour se connecter à 
 
 ![PGAdmin](pgAdmin.png)
 
-Note: Les informations sont à adapter aux identifiants définis dans le .env.
+Note: Les informations sont à adapter aux identifiants définis dans le .env. 'host.docker.internal' n'est valable qu'avec Docker Desktop (Windows/MacOS), sur Linux il faut utiliser le nom du conteneur ("db").
